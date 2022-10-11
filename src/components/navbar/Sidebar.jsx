@@ -14,7 +14,7 @@ const Sidebar = ({ closeSidebar }) => {
       exit={{
         x: "100%",
       }}
-      transition={{ type: "spring", damping: 17 }}
+      transition={{ type: "spring", damping: 15, stiffness: 150 }}
       className="z-20 fixed min-h-screen right-0 top-0 w-2/3 bg-white shadow-sm shadow-indigo-50 border-l p-6"
     >
       <button onClick={closeSidebar} className="icon-button">
