@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.custom-gradient {
+  background: linear-gradient(
+    135deg,
+    rgb(253, 247, 255) 0%,
+    rgba(245, 224, 236, 1) 38%,
+    rgba(252, 243, 239, 1) 67%,
+    rgba(255, 251, 249, 1) 89%,
+    #ffffff 95%
+  );
+  filter: blur(20px);
+}
+body {
+  font-family: "poppins", "sans-serif";
+}
+@layer components {
+  .icon-button {
+    @apply p-2 outline outline-1 outline-gray-400 focus:outline-none rounded focus:ring-1 focus:ring-offset-1  focus:ring-indigo-400;
+  }
+}
